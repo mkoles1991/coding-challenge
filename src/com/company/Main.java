@@ -17,7 +17,7 @@ public class Main {
         //read input file, store words in Map
         try {
             File file = new File("input.txt");
-            sc = new Scanner(file).useDelimiter("(\\p{javaWhitespace}|\\!|\\?|\\n|\\.|,)+");
+            sc = new Scanner(file).useDelimiter("(\\s|\\!|\\?|\\n|\\.|,)+");
 
 
             while (sc.hasNext()) {
